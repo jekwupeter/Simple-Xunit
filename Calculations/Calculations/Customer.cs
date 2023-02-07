@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculations
 {
+    
     public class Customer
     {
         public string Name => "Test";
@@ -19,6 +20,11 @@ namespace Calculations
             }
 
             return 10;
+        }
+
+        public string GetFullName(string firstName, string lastName)
+        {
+            return $"{firstName} {lastName}";
         }
     }
 

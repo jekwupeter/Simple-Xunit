@@ -4,40 +4,48 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
+using Xunit.Abstractions;
 using static Calculations.LoyalCustomer;
 
 namespace Calculations.Test
 {
+    [Collection("Customer")]
     public class CustomerTest
     {
+        private readonly CustomerFixture _fixture;
+        private readonly ITestOutputHelper testOutputHelper;
+
+        public CustomerTest(CustomerFixture fixture, ITestOutputHelper testOutputHelper)
+        {
+            _fixture = fixture;
+            this.testOutputHelper = testOutputHelper;
+        }
+    
         [Fact]
         public void CheckNameNotEmpty()
         {
-            var customer = new Customer();
-            Assert.NotNull(customer.Name);
-            Assert.False(string.IsNullOrEmpty(customer.Name));
+            // var customer = new Customer();
+            Assert.NotNull(_fixture.Cust.Name);
+            Assert.False(string.IsNullOrEmpty(_fixture.Cust.Name));
 
         }
 
         [Fact]
         public void CheckAgeForDiscount()
         {
-            var customer = new Customer();
-            Assert.InRange(customer.Age, 10, 50);
+            Assert.InRange(_fixture.Cust.Age, 10, 50);
         }
 
         [Fact]
         public void CheckGetOrdersByNameNotNull()
         {
-            var customer = new Customer();
-            Assert.Throws<ArgumentException>(() => customer.GetOrdersByName(null));
+            Assert.Throws<ArgumentException>(() => _fixture.Cust.GetOrdersByName(null));
         }
 
         [Fact]
         public void CheckGetOrdersByNameExceptionMessage()
         {
-            var customer = new Customer();
-            var exceptionDetails = Assert.Throws<ArgumentException>(() => customer.GetOrdersByName(null));
+            var exceptionDetails = Assert.Throws<ArgumentException>(() => _fixture.Cust.GetOrdersByName(null));
             Assert.Equal("Null name", exceptionDetails.Message);
         }
 
