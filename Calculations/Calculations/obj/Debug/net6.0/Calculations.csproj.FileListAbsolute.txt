@@ -1,0 +1,15 @@
+E:\New folder\dotnetL\Xunit-ArefKarimi\Calculations\Calculations\bin\Debug\net6.0\Calculations.exe
+E:\New folder\dotnetL\Xunit-ArefKarimi\Calculations\Calculations\bin\Debug\net6.0\Calculations.deps.json
+E:\New folder\dotnetL\Xunit-ArefKarimi\Calculations\Calculations\bin\Debug\net6.0\Calculations.runtimeconfig.json
+E:\New folder\dotnetL\Xunit-ArefKarimi\Calculations\Calculations\bin\Debug\net6.0\Calculations.dll
+E:\New folder\dotnetL\Xunit-ArefKarimi\Calculations\Calculations\bin\Debug\net6.0\Calculations.pdb
+E:\New folder\dotnetL\Xunit-ArefKarimi\Calculations\Calculations\obj\Debug\net6.0\Calculations.csproj.AssemblyReference.cache
+E:\New folder\dotnetL\Xunit-ArefKarimi\Calculations\Calculations\obj\Debug\net6.0\Calculations.GeneratedMSBuildEditorConfig.editorconfig
+E:\New folder\dotnetL\Xunit-ArefKarimi\Calculations\Calculations\obj\Debug\net6.0\Calculations.AssemblyInfoInputs.cache
+E:\New folder\dotnetL\Xunit-ArefKarimi\Calculations\Calculations\obj\Debug\net6.0\Calculations.AssemblyInfo.cs
+E:\New folder\dotnetL\Xunit-ArefKarimi\Calculations\Calculations\obj\Debug\net6.0\Calculations.csproj.CoreCompileInputs.cache
+E:\New folder\dotnetL\Xunit-ArefKarimi\Calculations\Calculations\obj\Debug\net6.0\Calculations.dll
+E:\New folder\dotnetL\Xunit-ArefKarimi\Calculations\Calculations\obj\Debug\net6.0\refint\Calculations.dll
+E:\New folder\dotnetL\Xunit-ArefKarimi\Calculations\Calculations\obj\Debug\net6.0\Calculations.pdb
+E:\New folder\dotnetL\Xunit-ArefKarimi\Calculations\Calculations\obj\Debug\net6.0\Calculations.genruntimeconfig.cache
+E:\New folder\dotnetL\Xunit-ArefKarimi\Calculations\Calculations\obj\Debug\net6.0\ref\Calculations.dll
