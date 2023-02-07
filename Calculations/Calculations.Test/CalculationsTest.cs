@@ -8,13 +8,30 @@ using Xunit;
 
 namespace Calculations.Test
 {
-    public class CalculationsTest
+    public class CalculationsFixture : IDisposable
     {
+        public Calculations Calc => new();
+
+        public void Dispose()
+        {
+            // clean    
+        }
+    }
+    
+    public class CalculationsTest : IClassFixture<CalculationsFixture>
+    {
+        private readonly CalculationsFixture _calculationsFixture;
+
+        public CalculationsTest(CalculationsFixture calculationsFixture)
+        {
+            _calculationsFixture = calculationsFixture;
+        }
+
         [Fact]
         [Trait("Category","Fibo")]
         public void FiboDoesNotIncludeZero()
         {
-            var calc = new Calculations();
+            var calc = _calculationsFixture.Calc;
             Assert.All(calc.FibNumbers, x => Assert.NotEqual(0, x) );
         }
 
@@ -22,14 +39,14 @@ namespace Calculations.Test
         [Trait("Category", "Fibo")]
         public void FiboNotIncludeFour()
         {
-            var calc = new Calculations();
+            var calc = _calculationsFixture.Calc;
             Assert.DoesNotContain(4, calc.FibNumbers);
-        }
+        } 
 
         [Fact]
         public void CheckCollection()
         {
-            var calc = new Calculations();
+            var calc = _calculationsFixture.Calc;
             var expectedCollection = new List<int> { 1, 1, 2, 3, 5, 8, 13 };
             Assert.Equal(expectedCollection, calc.FibNumbers);
         }
