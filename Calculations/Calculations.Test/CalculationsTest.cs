@@ -60,6 +60,16 @@ namespace Calculations.Test
             Assert.Equal(expectedCollection, calc.FibNumbers);
         }
 
+        [InlineData(1, true)]
+        [InlineData(4, false)]
+        [Theory]
+        public void CheckOddNumber_TestOddAndEven(int num, bool expected)
+        {
+            var Calc = _calculationsFixture.Calc;
+            var result = Calc.CheckOddNumber(num);
+            Assert.Equal(expected, result);
+        }
+
         public void Dispose()
         {
             stream.Close();
