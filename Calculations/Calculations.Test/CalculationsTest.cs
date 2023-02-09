@@ -88,6 +88,15 @@ namespace Calculations.Test
             Assert.Equal(expected, result);
         }
 
+        [IsOddOrEvenDataAttribute]
+        [Theory]
+        public void CheckOddNumber_TestOddAndEvenUsingCustomData(int num, bool expected)
+        {
+            var Calc = _calculationsFixture.Calc;
+            var result = Calc.CheckOddNumber(num);
+            Assert.Equal(expected, result);
+        }
+
         public void Dispose()
         {
             stream.Close();
