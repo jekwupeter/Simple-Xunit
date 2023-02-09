@@ -79,6 +79,15 @@ namespace Calculations.Test
             Assert.Equal(expected, result);
         }
 
+        [MemberData(nameof(TestDataShare.IsOddOrEvenExternalData), MemberType = typeof(TestDataShare))]
+        [Theory]
+        public void CheckOddNumber_TestOddAndEvenUsingExternalData(int num, bool expected)
+        {
+            var Calc = _calculationsFixture.Calc;
+            var result = Calc.CheckOddNumber(num);
+            Assert.Equal(expected, result);
+        }
+
         public void Dispose()
         {
             stream.Close();

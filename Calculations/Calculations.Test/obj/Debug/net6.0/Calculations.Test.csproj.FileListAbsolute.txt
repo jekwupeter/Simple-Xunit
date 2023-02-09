@@ -208,3 +208,4 @@ E:\New folder\dotnetL\Xunit-ArefKarimi\Simple-Xunit\Calculations\Calculations.Te
 E:\New folder\dotnetL\Xunit-ArefKarimi\Simple-Xunit\Calculations\Calculations.Test\obj\Debug\net6.0\Calculations.Test.pdb
 E:\New folder\dotnetL\Xunit-ArefKarimi\Simple-Xunit\Calculations\Calculations.Test\obj\Debug\net6.0\Calculations.Test.genruntimeconfig.cache
 E:\New folder\dotnetL\Xunit-ArefKarimi\Simple-Xunit\Calculations\Calculations.Test\obj\Debug\net6.0\ref\Calculations.Test.dll
+E:\New folder\dotnetL\Xunit-ArefKarimi\Simple-Xunit\Calculations\Calculations.Test\bin\Debug\net6.0\IsOddOrEvenTestData.txt
